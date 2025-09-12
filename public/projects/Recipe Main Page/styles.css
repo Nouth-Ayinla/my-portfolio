@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Young Serif,Outfit;
+}
+@font-face {
+    font-family: 'Young Serif';
+    src: url('young-serif/YoungSerif-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+body{
+    background-color: #f3e5d8;
+    color:#5f574e;
+    line-height:1.6;
+    padding:20px;
+}
+.container{
+    max-width:800px;
+    margin:0 auto;
+}
+.recipe-card{
+    background-color:white;
+    border-radius: 15px;
+    padding:30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.recipe-img{
+    width:100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+h1{
+    font-size:2rem;
+    color:#312e2c;
+    margin-bottom:15px;
+font-weight:600;
+}
+.description{
+    margin:26px;
+}
+.prep-time{
+    background-color: #fff5fa;
+    padding:20px;
+    border-radius:10px;
+    margin:20px 0;
+
+}
+.prep-time h3{
+    color:#7b284f;
+    margin-bottom:10px;
+   font-size:1.2rem;
+
+}
+.prep-time ul{
+    padding-left:20px;
+
+}
+.prep-time li{
+    margin-bottom: 5px;
+}
+.section{
+    margin:25px 0;
+    padding-bottom:20px;
+    border-bottom: 1px solid #e4ded8;
+
+}
+section:last-child{
+    border-bottom: none;
+}
+h2{
+    color:#854632;
+    font-size:1.8rem;
+    margin-bottom:15px;
+    font-weight:600px;
+}
+ul,ol{
+    padding-left:25px;
+}
+li{
+    margin-bottom:10px;
+    padding-left:15px;
+}
+ol li{
+    padding-left:0;
+    }
+   .nutrition-table {
+    width: 100%;
+    border-collapse: collapse; 
+}
+
+.nutrition-table tr:not(:last-child) {
+    border-bottom: 1px solid #ddd; 
+}
+
+.nutrition-table td {
+    padding: 8px;
+}
+
+table.nutrition-table tr:last-child td {
+    border-bottom: none !important;
+}
+
+    @media(max-width:600px){
+           body{
+            padding:10px;
+           }
+           .recipe-card{
+            padding:20px;
+           }
+           h1{
+            font-size:1.8rem;
+           }
+           h2{
+            font-size:1.5rem;
+           }
+           .prep-time{
+            padding:15px;
+           }
+           section{
+            margin:20px 0;
+           }
+    }
