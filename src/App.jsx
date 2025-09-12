@@ -6,7 +6,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import ThemeToggle from './components/ThemeToggle';
+
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -43,7 +43,7 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
-      <ThemeToggle />
+     
     </div>
   );
 }

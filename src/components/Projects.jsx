@@ -9,50 +9,28 @@ const Projects = () => {
       title: "Crochet Artist Portfolio",
       description: "A beautiful showcase for fiber artists with gallery and contact features",
       tags: ["HTML", "CSS", "JavaScript"],
-      screenshot: "https://images.unsplash.com/photo-1586348943529-beaae6c28db9?w=500&h=300&fit=crop",
-      demoLink: "https://example.com/crochet-portfolio",
-      githubLink: "https://github.com/yourusername/crochet-portfolio"
+      screenshot: "assets/images/screenshot1.png",
+      demoLink: "https://hopell-crochet.netlify.app/",
+      githubLink: "https://github.com/Nouth-Ayinla/Hopell"
     },
     {
-      title: "E-Commerce Store",
+      title: "Demo E-Commerce Store",
       description: "Online shop with shopping cart functionality and product filtering",
       tags: ["HTML", "CSS", "JavaScript"],
-      screenshot: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
-      demoLink: "https://example.com/ecommerce-store",
-      githubLink: "https://github.com/yourusername/ecommerce-store"
+      screenshot: "assets/images/screenshot2.png",
+      demoLink: "https://demo-e-commerce7.netlify.app/",
+      githubLink: "https://github.com/Nouth-Ayinla/Demo-E-commerce"
     },
+   
     {
-      title: "Star Pulse Pro",
-      description: "Product landing page for a premium smartwatch with animated features",
-      tags: ["HTML", "CSS", "GSAP"],
-      screenshot: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&h=300&fit=crop",
-      demoLink: "https://example.com/star-pulse-pro",
-      githubLink: "https://github.com/yourusername/star-pulse-pro"
-    },
-    {
-      title: "Simple Omelette",
-      description: "Recipe app with step-by-step instructions and cooking timers",
-      tags: ["React", "Firebase", "API"],
-      screenshot: "https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=500&h=300&fit=crop",
-      demoLink: "https://example.com/simple-omelette",
-      githubLink: "https://github.com/yourusername/simple-omelette"
-    },
-    {
-      title: "Budget Tracker",
-      description: "Interactive finance dashboard with expense categorization and spending analytics",
-      tags: ["JavaScript", "Chart.js", "Data Visualization"],
-      screenshot: "https://images.unsplash.com/photo-1534951009808-766178b47a4f?w=500&h=300&fit=crop",
-      demoLink: "https://example.com/budget-tracker",
-      githubLink: "https://github.com/yourusername/budget-tracker"
-    },
-    {
-      title: "Task Manager",
-      description: "Drag-and-drop task organizer with progress tracking",
-      tags: ["JavaScript", "LocalStorage", "Drag API"],
-      screenshot: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
-      demoLink: "https://example.com/task-manager",
-      githubLink: "https://github.com/yourusername/task-manager"
-    },
+  "title": "MFMCF Futa Website",
+  "description": " A demo  website for MFMCF Futa campus with information, events, and resources",
+  "tags": ["React", "Tailwind CSS", "JavaScript"],
+  "screenshot": "assets/images/screenshot3.png",
+  "demoLink": "https://mfmcffutademowebsite.netlify.app/",
+  "githubLink": "https://github.com/Nouth-Ayinla/Mfmcf"
+   },
+    
   ];
 
   const nextProject = () => {
