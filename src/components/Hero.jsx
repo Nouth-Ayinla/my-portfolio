@@ -36,16 +36,16 @@ const Hero = () => {
             </p>
 
             
-            <div className="flex flex-col sm:flex-row gap-5 justify-center mb-8 animate-slide-up delay-400">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 animate-slide-up delay-400 mx-auto w-full sm:w-auto">
               <a
                 href="#projects"
-                className="px-4 py-3 rounded-full bg-primary text-white font-semibold hover:-translate-y-1 hover:shadow-lg transition-all shadow-lg"
+                className="w-40 sm:w-auto px-4 py-3 rounded-full bg-primary text-white font-semibold hover:-translate-y-1 hover:shadow-lg transition-all shadow-lg text-center flex justify-center items-center"
               >
                 View Work
               </a>
               <a
                 href="#contact"
-                className="px-6 py-3 rounded-full border-2 border-primary text-primary font-semibold hover:-translate-y-1 hover:shadow-lg hover:bg-primary hover:text-white transition-all"
+                className="w-40 sm:w-auto px-4 py-3 rounded-full border-2 border-primary text-primary font-semibold hover:-translate-y-1 hover:shadow-lg hover:bg-primary hover:text-white transition-all text-center flex justify-center items-center"
               >
                 Contact Me
               </a>
@@ -67,23 +67,7 @@ const Hero = () => {
         </div>
 
        
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-          <button
-            onClick={scrollToAbout}
-            className="animate-bounce w-12 h-12 flex items-center justify-center rounded-full bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all hover:-translate-y-1"
-            aria-label="Scroll to about section"
-          >
-            <svg 
-              className="w-6 h-6 text-primary" 
-              fill="none" 
-              stroke="currentColor" 
-              viewBox="0 0 24 24" 
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-            </svg>
-          </button>
-        </div>
+        
       </div>
     </section>
   );
