@@ -1,21 +1,33 @@
 import { FaEnvelope, FaMapMarkerAlt, FaGithub, FaLinkedin, FaWhatsapp, FaPaperPlane } from 'react-icons/fa';
 
 const Contact = () => {
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const name = e.target.elements.name.value;
-    const email = e.target.elements.email.value;
-    const message = e.target.elements.message.value;
+    const form = e.target;
     
-    const whatsappMessage = `*New Contact Form Submission*%0A%0A*Name:* ${name}%0A*Email:* ${email}%0A*Message:* ${message}`;
-    window.open(`https://wa.me/2349029278707?text=${whatsappMessage}`, '_blank');
-    e.target.reset();
-    alert('Thank you for your message! You will be redirected to WhatsApp to complete the conversation.');
+    try {
+      const response = await fetch('https://formspree.io/f/mgvnplbg', {
+        method: 'POST',
+        body: new FormData(form),
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+      
+      if (response.ok) {
+        form.reset();
+        alert('Thank you for your message! I will get back to you soon.');
+      } else {
+        alert('Oops! There was a problem submitting your form. Please try again.');
+      }
+    } catch (error) {
+      alert('Oops! There was a problem submitting your form. Please try again.');
+    }
   };
 
   return (
     <section id="contact" className="py-20 bg-gray-100 dark:bg-gray-900">
-      <div className="container mx-auto px-5">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-3 dark:text-white">
             Get In <span className="text-primary">Touch</span>
@@ -29,12 +41,12 @@ const Contact = () => {
             
             <div className="space-y-6 mb-10">
               <div className="flex items-center gap-4 p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                   <FaEnvelope className="text-xl text-primary" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="font-semibold dark:text-white">Email</p>
-                  <p className="text-gray-600 dark:text-gray-300">shawolhorizon@gmail.com</p>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm break-all">shawolhorizon@gmail.com</p>
                 </div>
               </div>
               
@@ -49,12 +61,12 @@ const Contact = () => {
               </div>
 
               <div className="flex items-center gap-4 p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                   <FaWhatsapp className="text-xl text-primary" />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="font-semibold dark:text-white">WhatsApp</p>
-                  <p className="text-gray-600 dark:text-gray-300">+234 902 927 8707</p>
+                  <p className="text-gray-600 dark:text-gray-300 text-sm">+234 902 927 8707</p>
                 </div>
               </div>
             </div>
@@ -159,7 +171,7 @@ const Contact = () => {
 
             <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
               <p className="text-sm text-blue-700 dark:text-blue-300 text-center">
-                💡 After submitting the form, you'll be redirected to WhatsApp to continue our conversation.
+                💡 I'll respond to your message as soon as possible!
               </p>
             </div>
           </div>

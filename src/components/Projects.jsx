@@ -31,6 +31,33 @@ const Projects = () => {
   "githubLink": "https://github.com/Nouth-Ayinla/Mfmcf"
    },
     
+  
+      {
+  "title": "Vendor Compliance Portal",
+  "description": " A platform to manage vendor compliance and data protection requirements.",
+  "tags": ["React", "TypeScript", "Tailwind CSS", "Supabase"],
+  "screenshot": "assets/images/screenshot4.png",
+  "demoLink": "https://dpovendor.vercel.app",
+  "githubLink": "https://github.com/Nouth-Ayinla/DPO-vendor"
+   },
+  
+    {
+  "title": "Love Regalty Productions",
+  "description": " A visually appealing website for a production company showcasing services and portfolio.",
+  "tags": ["React", "TypeScript", "TailwindCSS",],
+  "screenshot": "assets/images/screenshot5.png",
+  "demoLink": "https://loveregaltyproductions.vercel.app",
+  "githubLink": "https://github.com/Nouth-Ayinla/Love-Regalty-Productions"
+   },
+
+    {
+  "title": "ShopwithTom",
+  "description": "A curated e-commerce fashion boutique selling handcrafted clothing and accessories with shopping cart.",
+  "tags": ["React", "TypeScript", "TailwindCSS"],
+  "screenshot": "assets/images/screenshot6.png",
+  "demoLink": "https://shopwithtom.netlify.app",
+  "githubLink": "https://github.com/Nouth-Ayinla/ShopwithTom"
+  }
   ];
 
   const nextProject = () => {

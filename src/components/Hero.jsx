@@ -51,19 +51,7 @@ const Hero = () => {
               </a>
             </div>
 
-        
-            <div className="flex flex-wrap justify-center gap-4 mb-24 animate-slide-up delay-500">
-              <div className="px-4 py-2 bg-white dark:bg-gray-800 rounded-full shadow-md">
-                <span className="text-sm font-medium">React</span>
-              </div>
-              <div className="px-4 py-2 bg-white dark:bg-gray-800 rounded-full shadow-md">
-                <span className="text-sm font-medium">TypeScript</span>
-              </div>
-              <div className="px-4 py-2 bg-white dark:bg-gray-800 rounded-full shadow-md">
-                <span className="text-sm font-medium">Tailwind CSS</span>
-              </div>
-            </div>
-          </div>
+       </div>
         </div>
 
        
