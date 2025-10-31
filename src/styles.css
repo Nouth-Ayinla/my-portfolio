@@ -8,7 +8,7 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text transition-colors duration-300;
+    @apply bg-light-bg text-light-text transition-colors duration-300;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
   }
@@ -38,10 +38,10 @@
     @apply text-3xl md:text-4xl font-bold mb-3;
   }
   .skill-card {
-    @apply bg-light-card dark:bg-dark-card p-6 rounded-lg shadow-md text-center hover:-translate-y-2 transition-transform;
+    @apply bg-light-card p-6 rounded-lg shadow-md text-center hover:-translate-y-2 transition-transform;
   }
   .project-card {
-    @apply bg-light-card dark:bg-dark-card rounded-lg overflow-hidden shadow-lg hover:-translate-y-2 transition-transform;
+    @apply bg-light-card rounded-lg overflow-hidden shadow-lg hover:-translate-y-2 transition-transform;
   }
 }
 
