@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-light-bg text-light-text transition-colors duration-300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+  }
+  h1, h2, h3, h4 {
+    @apply leading-tight;
+  }
+  a {
+    @apply text-inherit no-underline;
+  }
+}
+
+/* Custom components */
+@layer components {
+  .btn {
+    @apply inline-block px-6 py-3 rounded-full font-semibold transition-all duration-300 cursor-pointer border-none;
+  }
+  .btn-primary {
+    @apply bg-primary text-white hover:-translate-y-1 hover:shadow-lg;
+  }
+  .btn-secondary {
+    @apply bg-transparent text-primary border-2 border-primary hover:-translate-y-1 hover:shadow-lg;
+  }
+  .section-header {
+    @apply text-center mb-16;
+  }
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-3;
+  }
+  .skill-card {
+    @apply bg-light-card p-6 rounded-lg shadow-md text-center hover:-translate-y-2 transition-transform;
+  }
+  .project-card {
+    @apply bg-light-card rounded-lg overflow-hidden shadow-lg hover:-translate-y-2 transition-transform;
+  }
+}
+
+/* Custom utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .glow {
+    @apply absolute inset-0 rounded-full bg-primary opacity-20 blur-xl;
+  }
+  .pattern {
+    @apply absolute inset-0 rounded-full bg-[radial-gradient(#3498db_1px,transparent_1px)] bg-[length:20px_20px] opacity-10;
+  }
+}
