@@ -1,6 +1,13 @@
 [build]
+  command = "npm run build"
   publish = "dist"
+
 [[headers]]
   for = "/*.xml"
   [headers.values]
-    Content-Type = "application/xml"xml"
+    Content-Type = "application/xml"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
