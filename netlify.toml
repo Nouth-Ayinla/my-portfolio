@@ -1,4 +1,7 @@
+[build]
+  publish = "public"  # or "dist" or whatever your build folder is called
+
 [[headers]]
   for = "/*.xml"
   [headers.values]
-    "Content-Type" = "application/xml"
+    Content-Type = "application/xml"xml"
