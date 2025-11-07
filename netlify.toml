@@ -1,6 +1,5 @@
 [build]
-  publish = "public"  # or "dist" or whatever your build folder is called
-
+  publish = "dist"
 [[headers]]
   for = "/*.xml"
   [headers.values]
