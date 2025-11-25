@@ -5,6 +5,25 @@ const Projects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
  const projects = [
+   {
+      title: "Audiophile e-commerce website",
+      description: "",
+      tags: ["React", "Typescript", "Convex"],
+      screenshot: "assets/images/screenshot1.png",
+      demoLink: "https://audiophile-six-psi.vercel.app/",
+      githubLink: "https://github.com/Nouth-Ayinla/Audiophile"
+    },
+     {
+  "title": "Love Regalty Productions",
+  "description": " A visually appealing website for a production company showcasing services and portfolio.",
+  "tags": ["React", "TypeScript", "TailwindCSS",],
+  "screenshot": "assets/images/screenshot5.png",
+  "demoLink": "https://loveregaltyproductions.vercel.app",
+  "githubLink": "https://github.com/Nouth-Ayinla/Love-Regalty-Productions"
+   },
+
+
+
     {
       title: "Crochet Artist Portfolio",
       description: "A beautiful showcase for fiber artists with gallery and contact features",
@@ -13,14 +32,7 @@ const Projects = () => {
       demoLink: "https://hopell-crochet.netlify.app/",
       githubLink: "https://github.com/Nouth-Ayinla/Hopell"
     },
-    {
-      title: "Demo E-Commerce Store",
-      description: "Online shop with shopping cart functionality and product filtering",
-      tags: ["HTML", "CSS", "JavaScript"],
-      screenshot: "assets/images/screenshot2.png",
-      demoLink: "https://demo-e-commerce7.netlify.app/",
-      githubLink: "https://github.com/Nouth-Ayinla/Demo-E-commerce"
-    },
+   
    
     {
   "title": "MFMCF Futa Website",
@@ -41,15 +53,7 @@ const Projects = () => {
   "githubLink": "https://github.com/Nouth-Ayinla/DPO-vendor"
    },
   
-    {
-  "title": "Love Regalty Productions",
-  "description": " A visually appealing website for a production company showcasing services and portfolio.",
-  "tags": ["React", "TypeScript", "TailwindCSS",],
-  "screenshot": "assets/images/screenshot5.png",
-  "demoLink": "https://loveregaltyproductions.vercel.app",
-  "githubLink": "https://github.com/Nouth-Ayinla/Love-Regalty-Productions"
-   },
-
+   
     {
   "title": "ShopwithTom",
   "description": "A curated e-commerce fashion boutique selling handcrafted clothing and accessories with shopping cart.",
