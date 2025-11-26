@@ -6,8 +6,8 @@ const Projects = () => {
 
  const projects = [
    {
-      title: "Audiophile e-commerce website",
-      description: "",
+      title: "Audiophile E-commerce website",
+      description: "Online shop with shopping cart functionality and product filtering",
       tags: ["React", "Typescript", "Convex"],
       screenshot: "assets/images/screenshot1.png",
       demoLink: "https://audiophile-six-psi.vercel.app/",
@@ -28,11 +28,19 @@ const Projects = () => {
       title: "Crochet Artist Portfolio",
       description: "A beautiful showcase for fiber artists with gallery and contact features",
       tags: ["HTML", "CSS", "JavaScript"],
-      screenshot: "assets/images/screenshot1.png",
+      screenshot: "assets/images/screenshot7.png",
       demoLink: "https://hopell-crochet.netlify.app/",
       githubLink: "https://github.com/Nouth-Ayinla/Hopell"
     },
    
+     {
+  "title": "Vendor Compliance Portal",
+  "description": " A platform to manage vendor compliance and data protection requirements.",
+  "tags": ["React", "TypeScript", "Tailwind CSS", "Supabase"],
+  "screenshot": "assets/images/screenshot4.png",
+  "demoLink": "https://dpovendor.vercel.app",
+  "githubLink": "https://github.com/Nouth-Ayinla/DPO-vendor"
+   },
    
     {
   "title": "MFMCF Futa Website",
@@ -44,14 +52,7 @@ const Projects = () => {
    },
     
   
-      {
-  "title": "Vendor Compliance Portal",
-  "description": " A platform to manage vendor compliance and data protection requirements.",
-  "tags": ["React", "TypeScript", "Tailwind CSS", "Supabase"],
-  "screenshot": "assets/images/screenshot4.png",
-  "demoLink": "https://dpovendor.vercel.app",
-  "githubLink": "https://github.com/Nouth-Ayinla/DPO-vendor"
-   },
+     
   
    
     {
