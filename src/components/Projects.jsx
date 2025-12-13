@@ -82,9 +82,9 @@ const Projects = () => {
       <div className="container mx-auto px-5">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-3">
-            My <span className="text-blue-600">Projects</span>
+            My <span className="text-primary">Projects</span>
           </h2>
-          <p className="text-lg text-blue-600">Some of my recent work</p>
+          <p className="text-lg text-primary">Some of my recent work</p>
         </div>
 
         {/* Desktop Grid View */}
@@ -114,7 +114,7 @@ const Projects = () => {
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-700 font-semibold flex items-center gap-1 hover:text-blue-600 transition-colors"
+                    className="text-gray-700 font-semibold flex items-center gap-1 hover:text-primary transition-colors"
                   >
                     <Github size={18} /> Code
                   </a>
@@ -122,7 +122,7 @@ const Projects = () => {
                     href={project.demoLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 font-semibold flex items-center gap-1 hover:underline"
+                    className="text-primary font-semibold flex items-center gap-1 hover:underline"
                   >
                     <ExternalLink size={18} /> Live Demo
                   </a>
@@ -165,7 +165,7 @@ const Projects = () => {
                           href={project.githubLink}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-gray-700 font-semibold flex items-center gap-1 hover:text-blue-600 transition-colors"
+                          className="text-gray-700 font-semibold flex items-center gap-1 hover:text-primary transition-colors"
                         >
                           <Github size={18} /> Code
                         </a>
@@ -173,7 +173,7 @@ const Projects = () => {
                           href={project.demoLink}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-blue-600 font-semibold flex items-center gap-1 hover:underline"
+                          className="text-primary font-semibold flex items-center gap-1 hover:underline"
                         >
                           <ExternalLink size={18} /> Demo
                         </a>
@@ -189,14 +189,14 @@ const Projects = () => {
           <div className="flex justify-center gap-5 mt-6">
             <button
               onClick={prevProject}
-              className="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 transition-colors shadow-md"
+              className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center hover:opacity-90 transition-opacity shadow-md"
               aria-label="Previous project"
             >
               <ChevronLeft size={20} />
             </button>
             <button
               onClick={nextProject}
-              className="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 transition-colors shadow-md"
+              className="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center hover:opacity-90 transition-opacity shadow-md"
               aria-label="Next project"
             >
               <ChevronRight size={20} />
@@ -209,7 +209,7 @@ const Projects = () => {
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
-                className={`w-2 h-2 rounded-full transition-all ${index === currentIndex ? 'bg-blue-600 w-6' : 'bg-gray-300'
+                className={`w-2 h-2 rounded-full transition-all ${index === currentIndex ? 'bg-primary w-6' : 'bg-gray-300'
                   }`}
                 aria-label={`Go to project ${index + 1}`}
               />

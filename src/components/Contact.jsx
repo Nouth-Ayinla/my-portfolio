@@ -41,7 +41,7 @@ const Contact = () => {
             
             <div className="space-y-6 mb-10">
               <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm">
-...
+                <FaEnvelope className="text-2xl text-primary flex-shrink-0" />
                 <div className="min-w-0">
                   <p className="font-semibold">Email</p>
                   <p className="text-gray-600 text-sm break-all">shawolhorizon@gmail.com</p>
@@ -49,7 +49,7 @@ const Contact = () => {
               </div>
               
               <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm">
-...
+                <FaMapMarkerAlt className="text-2xl text-primary flex-shrink-0" />
                 <div>
                   <p className="font-semibold">Location</p>
                   <p className="text-gray-600">Nigeria</p>
@@ -57,7 +57,7 @@ const Contact = () => {
               </div>
 
               <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-sm">
-...
+                <FaWhatsapp className="text-2xl text-primary flex-shrink-0" />
                 <div className="min-w-0">
                   <p className="font-semibold">WhatsApp</p>
                   <p className="text-gray-600 text-sm">+234 902 927 8707</p>
