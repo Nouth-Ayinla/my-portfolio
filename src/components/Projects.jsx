@@ -7,7 +7,7 @@ const Projects = () => {
   const projects = [
      {
       "title": "Styled-Life",
-      "description": "A modern lifestyle blog platform with category filtering, search functionality, and beautifully designed post pages. Features content across Lifestyle, Travel, Wellness, Food, and Fashion with dark/light mode support.",
+      "description": "A modern lifestyle blog platform with category filtering, search functionality, and beautifully designed post pages.",
       "tags": ["React", "TypeScript", "Tailwind CSS", "shadcn/ui"],
       "screenshot": "assets/images/screenshot2.png",
       "demoLink": "https://maison-opal.vercel.app/",
