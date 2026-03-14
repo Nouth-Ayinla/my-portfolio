@@ -5,7 +5,15 @@ const Projects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const projects = [
-    {
+     {
+      "title": "Styled-Life",
+      "description": "A modern lifestyle blog platform with category filtering, search functionality, and beautifully designed post pages. Features content across Lifestyle, Travel, Wellness, Food, and Fashion with dark/light mode support.",
+      "tags": ["React", "TypeScript", "Tailwind CSS", "shadcn/ui"],
+      "screenshot": "assets/images/screenshot2.png",
+      "demoLink": "https://maison-opal.vercel.app/",
+      "githubLink": "https://github.com/Nouth-Ayinla/Maison"
+    },
+     {
       title: "Audiophile E-commerce website",
       description: "Online shop with shopping cart functionality,a functional checkout and product filtering",
       tags: ["React", "Typescript", "Convex"],
@@ -24,14 +32,6 @@ const Projects = () => {
 
 
 
-    {
-      title: "Crochet Artist Portfolio",
-      description: "A beautiful showcase for fiber artists with gallery and contact features",
-      tags: ["HTML", "CSS", "JavaScript"],
-      screenshot: "assets/images/screenshot7.png",
-      demoLink: "https://hopell-crochet.netlify.app/",
-      githubLink: "https://github.com/Nouth-Ayinla/Hopell"
-    },
 
     {
       "title": "Vendor Compliance Portal",
@@ -64,14 +64,7 @@ const Projects = () => {
       "githubLink": "https://github.com/Nouth-Ayinla/ShopwithTom"
     },
 
-    {
-      "title": "Styled-Life",
-      "description": "A modern lifestyle blog platform with category filtering, search functionality, and beautifully designed post pages. Features content across Lifestyle, Travel, Wellness, Food, and Fashion with dark/light mode support.",
-      "tags": ["React", "TypeScript", "Tailwind CSS", "shadcn/ui"],
-      "screenshot": "assets/images/screenshot2.png",
-      "demoLink": "https://maison-opal.vercel.app/",
-      "githubLink": "https://github.com/Nouth-Ayinla/Maison"
-    }
+   
   ];
 
   const nextProject = () => {
