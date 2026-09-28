@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const About = () => {
   // Function to handle Resume download
   const handleDownloadResume = () => {
@@ -24,11 +26,13 @@ const About = () => {
           {/* Image */}
           <div className="lg:w-1/2 flex justify-center">
             <div className="relative group">
-              <div className="w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-2xl overflow-hidden shadow-xl transform rotate-2 group-hover:rotate-0 transition-transform duration-300">
-                <img 
-                  src="/images/profile.jpg" 
-                  alt="Feranmi" 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              <div className="relative w-64 h-80 md:w-72 md:h-96 lg:w-80 lg:h-[28rem] rounded-2xl overflow-hidden bg-gradient-to-b from-blue-50 to-indigo-100 shadow-xl transform rotate-2 group-hover:rotate-0 transition-transform duration-300">
+                <Image
+                  src="/images/about-portrait.png"
+                  alt="Oluwaferanmi Ayinla"
+                  fill
+                  sizes="(min-width: 1024px) 320px, (min-width: 768px) 288px, 256px"
+                  className="w-full h-full object-contain object-bottom group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white font-bold shadow-lg transform group-hover:scale-110 transition-transform duration-300">
