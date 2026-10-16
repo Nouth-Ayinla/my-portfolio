@@ -142,7 +142,7 @@ const ProjectCard = ({ project, isDuplicate = false }) => (
 
 const ProjectGrid = ({ isDuplicate = false }) => (
   <div
-    className="grid w-[150%] grid-cols-3 gap-3 px-0 py-4 sm:w-auto sm:grid-cols-2 sm:gap-6 sm:px-5 md:grid-cols-2 md:gap-8 lg:grid-cols-3"
+    className="grid w-[150%] grid-cols-3 gap-3 px-0 py-4 sm:w-auto sm:grid-cols-2 sm:gap-6 sm:px-5 md:grid-cols-3 md:gap-8"
     aria-hidden={isDuplicate ? 'true' : undefined}
   >
     {projects.map((project) => (
@@ -168,7 +168,7 @@ const Projects = () => {
         </div>
 
         <div
-          className="relative mx-auto h-[620px] w-full max-w-md overflow-hidden [perspective:1000px] md:hidden"
+          className="relative mx-auto h-[620px] w-full max-w-md overflow-hidden [perspective:1000px] lg:hidden md:max-w-4xl"
           style={{
             WebkitMaskImage:
               'linear-gradient(to bottom, transparent, black 5%, black 95%, transparent)',
@@ -176,14 +176,14 @@ const Projects = () => {
               'linear-gradient(to bottom, transparent, black 5%, black 95%, transparent)',
           }}
         >
-          <div className="relative left-[50%] w-[80%] origin-center animate-skew-scroll will-change-transform focus-within:[animation-play-state:paused] motion-reduce:left-0 motion-reduce:mx-auto motion-reduce:animate-none">
+          <div className="relative left-[50%] w-[80%] origin-center animate-skew-scroll will-change-transform focus-within:[animation-play-state:paused] md:left-[6%] md:w-[90%] motion-reduce:left-0 motion-reduce:mx-auto motion-reduce:animate-none">
             <ProjectGrid />
             <ProjectGrid isDuplicate />
           </div>
         </div>
 
         <div
-          className="relative mx-auto hidden h-[700px] w-full max-w-7xl overflow-hidden [perspective:1400px] md:block"
+          className="relative mx-auto hidden h-[700px] w-full max-w-7xl overflow-hidden [perspective:1400px] lg:block"
           style={{
             WebkitMaskImage:
               'linear-gradient(to bottom, transparent, black 8%, black 92%, transparent)',
