@@ -25,6 +25,19 @@ module.exports = {
       transitionProperty: {
         all: 'all',
       },
+      animation: {
+        'skew-scroll': 'skew-scroll 36s linear infinite',
+      },
+      keyframes: {
+        'skew-scroll': {
+          '0%': {
+            transform: 'rotateX(12deg) rotateZ(-7deg) skewX(7deg) translateY(0)',
+          },
+          '100%': {
+            transform: 'rotateX(12deg) rotateZ(-7deg) skewX(7deg) translateY(-50%)',
+          },
+        },
+      },
     },
   },
   plugins: [require('@tailwindcss/forms')],

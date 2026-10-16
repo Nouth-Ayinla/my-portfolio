@@ -1,13 +1,29 @@
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaWordpress, FaMobileAlt } from 'react-icons/fa';
+import { FaGitAlt, FaMobileAlt, FaPython, FaReact } from 'react-icons/fa';
+import {
+  SiExpo,
+  SiFastapi,
+  SiFirebase,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiPostgresql,
+  SiTailwindcss,
+  SiTypescript,
+} from 'react-icons/si';
 
 const Skills = () => {
   const skills = [
-    { name: 'HTML', icon: <FaHtml5 className="text-5xl mb-4" /> },
-    { name: 'CSS', icon: <FaCss3Alt className="text-5xl mb-4" /> },
-    { name: 'JavaScript', icon: <FaJs className="text-5xl mb-4" /> },
+    { name: 'TypeScript', icon: <SiTypescript className="text-5xl mb-4" /> },
     { name: 'React', icon: <FaReact className="text-5xl mb-4" /> },
-    { name: 'WordPress', icon: <FaWordpress className="text-5xl mb-4" /> },
-    { name: 'Responsive Design', icon: <FaMobileAlt className="text-5xl mb-4" /> },
+    { name: 'React Native', icon: <FaMobileAlt className="text-5xl mb-4" /> },
+    { name: 'Next.js', icon: <SiNextdotjs className="text-5xl mb-4" /> },
+    { name: 'Node.js', icon: <SiNodedotjs className="text-5xl mb-4" /> },
+    { name: 'Python', icon: <FaPython className="text-5xl mb-4" /> },
+    { name: 'PostgreSQL', icon: <SiPostgresql className="text-5xl mb-4" /> },
+    { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-5xl mb-4" /> },
+    { name: 'Expo', icon: <SiExpo className="text-5xl mb-4" /> },
+    { name: 'FastAPI', icon: <SiFastapi className="text-5xl mb-4" /> },
+    { name: 'Firebase', icon: <SiFirebase className="text-5xl mb-4" /> },
+    { name: 'Git', icon: <FaGitAlt className="text-5xl mb-4" /> },
   ];
 
   return (
@@ -22,10 +38,10 @@ const Skills = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
-          {skills.map((skill, index) => (
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+          {skills.map((skill) => (
             <div 
-              key={index}
+              key={skill.name}
               className="skill-card flex flex-col items-center justify-center"
             >
               <div className="text-primary">

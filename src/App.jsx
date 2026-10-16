@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'skills', 'projects', 'contact'];
+      const sections = ['home', 'about', 'projects', 'skills', 'contact'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -41,8 +41,8 @@ function App() {
       <Navbar activeSection={activeSection} />
       <Hero />
       <About />
-      <Skills />
       <Projects />
+      <Skills />
       <Contact />
       <Footer />
      

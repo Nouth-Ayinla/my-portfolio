@@ -19,13 +19,13 @@ const Hero = () => {
                 Oluwaferanmi
               </h1>
               <h2 className="text-xl md:text-2xl lg:text-3xl text-primary mb-6 animate-slide-up delay-200">
-              a Frontend Developer
+              Software Engineer
               </h2>
             </div>
             
             <p className="text-base md:text-lg text-gray-600 mb-8 max-w-lg mx-auto animate-slide-up delay-300">
-              I build exceptional digital experiences with modern web technologies, 
-              turning ideas into beautiful, functional applications.
+              I build thoughtful web and mobile products that turn complex ideas into
+              simple, reliable experiences.
             </p>
 
             

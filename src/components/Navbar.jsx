@@ -20,7 +20,7 @@ const Navbar = () => {
         </a>
         
         <ul className={`md:flex gap-8 ${isMenuOpen ? 'flex flex-col fixed top-20 left-0 w-full h-[calc(100vh-80px)] bg-white items-center justify-center' : 'hidden'}`}>
-          {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((item) => (
+          {['Home', 'About', 'Projects', 'Skills', 'Contact'].map((item) => (
             <li key={item}>
               <a 
                 href={`#${item.toLowerCase()}`} 
