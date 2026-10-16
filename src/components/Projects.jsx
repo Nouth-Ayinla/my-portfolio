@@ -142,7 +142,7 @@ const ProjectCard = ({ project, isDuplicate = false }) => (
 
 const ProjectGrid = ({ isDuplicate = false }) => (
   <div
-    className="grid grid-cols-2 gap-3 px-0 py-4 sm:gap-6 sm:px-5 md:grid-cols-2 md:gap-8 lg:grid-cols-3"
+    className="grid grid-cols-3 gap-2 px-0 py-4 sm:grid-cols-2 sm:gap-6 sm:px-5 md:grid-cols-2 md:gap-8 lg:grid-cols-3"
     aria-hidden={isDuplicate ? 'true' : undefined}
   >
     {projects.map((project) => (
@@ -176,7 +176,7 @@ const Projects = () => {
               'linear-gradient(to bottom, transparent, black 5%, black 95%, transparent)',
           }}
         >
-          <div className="relative left-[76%] w-[80%] origin-center animate-skew-scroll will-change-transform focus-within:[animation-play-state:paused] motion-reduce:left-0 motion-reduce:mx-auto motion-reduce:animate-none">
+          <div className="mx-auto w-[94%] origin-top animate-skew-scroll will-change-transform focus-within:[animation-play-state:paused] motion-reduce:animate-none">
             <ProjectGrid />
             <ProjectGrid isDuplicate />
           </div>
