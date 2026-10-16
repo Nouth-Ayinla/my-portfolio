@@ -176,7 +176,7 @@ const Projects = () => {
               'linear-gradient(to bottom, transparent, black 5%, black 95%, transparent)',
           }}
         >
-          <div className="relative left-[60%] w-[80%] origin-center animate-skew-scroll will-change-transform focus-within:[animation-play-state:paused] motion-reduce:left-0 motion-reduce:mx-auto motion-reduce:animate-none">
+          <div className="relative left-[76%] w-[80%] origin-center animate-skew-scroll will-change-transform focus-within:[animation-play-state:paused] motion-reduce:left-0 motion-reduce:mx-auto motion-reduce:animate-none">
             <ProjectGrid />
             <ProjectGrid isDuplicate />
           </div>
